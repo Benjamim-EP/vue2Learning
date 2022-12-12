@@ -1,5 +1,6 @@
 <template>
     <div class="button"
+        @click="$emit('onCalcButtonClick',label)"
         :class="{double, triple, operation}">
         {{label}}
     </div>
